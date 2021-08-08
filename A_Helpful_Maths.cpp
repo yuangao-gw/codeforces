@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 int main(int argc, char const *argv[])
 {
@@ -23,8 +24,6 @@ int main(int argc, char const *argv[])
             cout << arr[i] << endl;
         }
         else cout << arr[i] << '+';
-    }
-    
-    
+    }  
     return 0;
 }
