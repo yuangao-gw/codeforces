@@ -1,19 +1,17 @@
 #include <bits/stdc++.h>
 int main(int argc, char const *argv[])
 {
-    long long n, r;
-    std::cin >> n;
-    int cnt = 0;
-    while (n)
+    std::string s1, s2;
+    std::cin >> s1 >> s2;
+    bool f = true;
+    for (size_t i = 0; i < s1.length(); i++)
     {
-        r = n % 10;
-        n = n / 10;
-        if (r == 4 || r == 7)
+        if (s1[i] != s2[s2.length() - 1 - i])
         {
-            cnt++;
+            f = false;
         }
     }
-    if (cnt == 4 || cnt == 7)
+    if (f)
     {
         std::cout << "YES" << std::endl;
     }
