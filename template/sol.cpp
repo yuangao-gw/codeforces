@@ -3,7 +3,7 @@
 using namespace std;
 
 typedef long long ll;
-typedef vecotr<int> vi;
+typedef vector<int> vi;
 typedef pair<int, int> pi;
 
 #define F first
